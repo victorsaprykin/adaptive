@@ -1,0 +1,184 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v30-cyrillic_latin-900.woff2') format('woff2');
+}
+
+:root {
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  --main-color: #383a4c;
+  --btn-bg: #15a9cb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+section {
+  padding: 70px 0;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1230px;
+}
+
+.section__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.btn {
+  padding: 12px 48px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 25px 0 rgba(21, 169, 203, 0.3);
+  background-color: #15a9cb;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #4a76a8;
+  background-color: #05cdfa;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .section__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .section__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 764px) {
+  .section__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 11px 49px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
