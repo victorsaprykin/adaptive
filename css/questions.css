@@ -158,7 +158,7 @@
 
   .form__inputs {
     margin-bottom: 45px;
-    width: 290px;
+    width: 100%;
   }
 
   .form__input {
