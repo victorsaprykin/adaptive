@@ -25,11 +25,10 @@
 }
 
 .contact {
-  padding-top: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 9px;
 }
 
 .contact:hover {
@@ -107,16 +106,12 @@
   }
 
   .header__heading {
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 
   .logo {
     width: 60px;
     height: 60px;
-  }
-
-  .contact {
-    padding-top: 6px;
   }
 
   .contact__tel {
@@ -132,12 +127,12 @@
   }
 
   .header__title {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
     font-size: 40px;
   }
 
   .header__subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     font-size: 18px;
   }
 }
@@ -211,5 +206,19 @@
     display: block;
     margin-bottom: 54px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding-bottom: 62px;
+  }
+
+  .header__title {
+    margin-bottom: 27px;
+  }
+
+  .header__subtitle {
+    margin-bottom: 33px;
   }
 }
